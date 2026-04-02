@@ -1,0 +1,11 @@
+[Unit]
+Description=RTL8188EUS WiFi auto-connect (rodozov_22)
+After=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/rtl8188-connect.sh
+
+[Install]
+WantedBy=multi-user.target
